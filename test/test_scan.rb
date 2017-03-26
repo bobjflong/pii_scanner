@@ -59,6 +59,5 @@ class TestScan < Minitest::Test
     scan.scan!
     assert_equal true, scan.failed?
     assert_equal ["RailsRowWithEmail", false, "'bob@foo.com' looks like an email"], scan.errors.flatten
-    assert_equal "foo", scan.report.to_s
   end
 end
